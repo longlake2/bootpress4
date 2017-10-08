@@ -85,6 +85,13 @@ gulp.task( 'scripts', ['jshint'], function() {
     .pipe( notify({ message: 'scripts task complete' }));
 } );
 
+//move bootstrap file to base directory
+
+gulp.task('bootmove', function() { 
+    return gulp.src(config.nodeDir + '/bootstrap/**/*.*') 
+      .pipe(gulp.dest('./bootstrap')); 
+});
+
 //move icon file to base directory
 
 gulp.task('icons', function() { 
