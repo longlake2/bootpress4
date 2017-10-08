@@ -102,7 +102,7 @@ options.sass = {
   noCache: true,
   //imagePath: 'assets/img',
   includePaths: [
-    config.nodeDir + '/bootpress4/scss',
+    config.nodeDir + '/bootstrap/scss',
   ]
 };
 
@@ -113,10 +113,9 @@ options.sassmin = {
   outputStyle: 'compressed',
   //imagePath: 'assets/img',
   includePaths: [
-    config.nodeDir + '/bootpress4/scss',
+    config.nodeDir + '/bootstrap/scss',
   ]
 };
-
 // Sass
 gulp.task('sass', function() {
     return gulp.src('./sass/style.scss')
