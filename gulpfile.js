@@ -16,7 +16,9 @@ var gulp = require( 'gulp' ),
   zip = require('gulp-zip');
 
 var config = {
-     nodeDir: './node_modules' 
+     nodeDir: './node_modules' ,
+   bootstrapDir: './bootstrap',
+ 
 }
 
 
@@ -109,7 +111,7 @@ options.sass = {
   noCache: true,
   //imagePath: 'assets/img',
   includePaths: [
-    config.nodeDir + '/bootstrap/scss',
+    config.bootstrapDir + '/scss',
   ]
 };
 
@@ -120,7 +122,7 @@ options.sassmin = {
   outputStyle: 'compressed',
   //imagePath: 'assets/img',
   includePaths: [
-    config.nodeDir + '/bootstrap/scss',
+   config.bootstrapDir + '/scss',
   ]
 };
 // Sass
