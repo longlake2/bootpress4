@@ -44,7 +44,7 @@ if ( ! function_exists( 'bootpress4_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'bootpress4' ),
+			'primary' => esc_html__( 'Primary', 'bootpress4' ),
 		) );
 
 		/*
@@ -152,3 +152,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Register Custom Navigation Walker
+// require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+// Register Custom Navigation Walker
+require get_template_directory() . '/inc/Bootstrap_Walker_Nav_Menu.php';
+
+
+
