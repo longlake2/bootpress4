@@ -12,7 +12,8 @@
 ?>
 
 	</div><!-- #content -->
-</div>
+</div><!--container-->
+
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootpress4' ) ); ?>"><?php
@@ -25,6 +26,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bootpress4' ), 'bootpress4', '<a href="http://mikeandshar.com">Mike Hart</a>' );
 			?>
 		</div><!-- .site-info -->
+	</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

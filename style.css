@@ -6379,8 +6379,46 @@ a.text-dark:focus, a.text-dark:hover {
     max-width: 100%; }
 
 /*--------------------------------------------------------------
-## Posts and pages
+# Content on Left with Sidebar on Right
 --------------------------------------------------------------*/
+.content-area {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 576px) {
+    .content-area {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    .content-area {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 66.66666667%;
+              flex: 0 0 66.66666667%;
+      max-width: 66.66666667%; } }
+
+.widget-area {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
+  @media (min-width: 576px) {
+    .widget-area {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+  @media (min-width: 768px) {
+    .widget-area {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 33.33333333%;
+              flex: 0 0 33.33333333%;
+      max-width: 33.33333333%; } }
+
 .sticky {
   display: block; }
 
@@ -6399,9 +6437,6 @@ a.text-dark:focus, a.text-dark:hover {
   clear: both;
   margin: 0 0 1.5em; }
 
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
 .comment-content a {
   word-wrap: break-word; }
 
