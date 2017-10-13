@@ -31,7 +31,7 @@
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php
 			endif;
 
@@ -42,17 +42,16 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav class="navbar navbar-expand-lg navbar-dark bk-dark" style="background-color: rgba(65, 105, 255, 0.8);">
-
+		<nav class="navbar navbar-expand-lg navbar-light" style="background: transparent;>
 <div class="container">	   
 	    		    	
-<?php
+<!-- <?php
 if ( function_exists( 'the_custom_logo' ) ) {
     the_custom_logo();
 } ?>
 
 	<a class="navbar-brand mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
-  
+   -->
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
