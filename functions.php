@@ -71,7 +71,6 @@ if ( ! function_exists( 'bootpress4_setup' ) ) :
 		/**
 		 * Add support for core custom logo.
 		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 250,
@@ -81,7 +80,34 @@ if ( ! function_exists( 'bootpress4_setup' ) ) :
 		) );
 	}
 endif;
+
+/**Setup custom logo **/
+
 add_action( 'after_setup_theme', 'bootpress4_setup' );
+
+
+
+if ( !function_exists( 'bootpress4_the_custom_logo' ) ) :
+/**
+ * Displays the optional custom logo.
+ *
+ * Display navbar-brand if no logo.
+ * 
+ */
+function bootpress4_the_custom_logo() {
+    // Try to retrieve the Custom Logo
+    $output = '';
+    if (function_exists('get_custom_logo'))
+        $output = get_custom_logo();
+    // Nothing in the output: Custom Logo is not supported, or there is no selected logo
+    // In both cases we display the site's name
+    if (empty($output))
+        $output = '<a class="navbar-brand" href="' . esc_url(home_url('/')) . '">' . get_bloginfo('name') . '</a>';
+    echo $output;
+}
+
+endif;
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

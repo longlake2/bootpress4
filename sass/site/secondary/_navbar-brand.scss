@@ -1,0 +1,20 @@
+// Navbar brand
+//
+// Used for brand, project, or site names.
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  margin-right: $navbar-padding-x;
+  font-size: $navbar-brand-font-size;
+  line-height: inherit;
+  white-space: nowrap;
+
+margin-left: 2.0rem;
+    font-size: 2.25rem;
+    
+  @include hover-focus {
+    text-decoration: none;
+  }
+}

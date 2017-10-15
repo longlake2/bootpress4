@@ -22,19 +22,14 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-<!-- 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'bootpress4' ); ?></a>
- -->
-	<header id="masthead" class="site-header">
+ 
+	<header id="masthead" class="site-header row">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php
-			endif;
+			bootpress4_the_custom_logo()
+			?>
 
+			<?php
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
@@ -43,15 +38,10 @@
 		</div><!-- .site-branding -->
 
 		<nav class="navbar navbar-expand-lg navbar-light" style="background: transparent;>
-<div class="container">	   
-	    		    	
-<!-- <?php
-if ( function_exists( 'the_custom_logo' ) ) {
-    the_custom_logo();
-} ?>
 
-	<a class="navbar-brand mb-0" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> 
-   -->
+
+<div class= "container">     		    	
+
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
@@ -76,4 +66,4 @@ if ( function_exists( 'the_custom_logo' ) ) {
 
 <div class= "container">
 
-	<div id="content" class="site-content row">
+	<div id="content" class="site-content">
