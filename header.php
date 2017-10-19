@@ -35,14 +35,11 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
-		</div><!-- .site-branding -->
+		</div>
+		 <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent;>
 
-		<nav class="navbar navbar-expand-lg navbar-light" style="background: transparent;>
-
-
-<div class= "container">     		    	
-
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    	<div class="container">
+			  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 		   		<div class="collapse navbar-collapse" id="navbarNav">
@@ -51,14 +48,14 @@
 	              'theme_location' => 'primary',
 	              'depth'      => 2,
 	              'container'  => false,
-	              'menu_class'     => 'navbar-nav',
+	              'menu_class'     => 'navbar-nav ml-auto',
 	              'walker'     => new Bootstrap_Walker_Nav_Menu()
 	              );
 	            if (has_nav_menu('primary')) {
 	              wp_nav_menu($args);
 	            }
 	            ?>
-	           </div>
+	          </div>
 
 	        </div>
 		</nav>

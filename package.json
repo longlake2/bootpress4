@@ -5,6 +5,7 @@
   "main": "",
   "author": "Mike Hart",
   "devDependencies": {
+    "mdi": "latest",
     "bootstrap": "^4.0.0-beta",
     "browser-sync": "^2.18.2",
     "critical": "^0.8.1",

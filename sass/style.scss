@@ -21,7 +21,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
 
+@import url(href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet");
+
 @import "variables/variables";
+
+@import "materialdesignicons";
 
 @import "bootstrap";
 
@@ -38,3 +43,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import "modules/alignments";
 
 @import "modules/clearings";
+

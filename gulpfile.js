@@ -97,8 +97,8 @@ gulp.task('bootmove', function() { 
 //move icon file to base directory
 
 gulp.task('icons', function() { 
-    return gulp.src(config.nodeDir + '/font-awesome/fonts/**.*') 
-      .pipe(gulp.dest('./fonts')); 
+    return gulp.src(config.nodeDir + '/mdi/fonts/**.*') 
+      .pipe(gulp.dest('./material-icons')); 
 });
  
 
@@ -112,6 +112,7 @@ options.sass = {
   //imagePath: 'assets/img',
   includePaths: [
     config.bootstrapDir + '/scss',
+     config.nodeDir + '/mdi/scss',
   ]
 };
 
@@ -123,6 +124,7 @@ options.sassmin = {
   //imagePath: 'assets/img',
   includePaths: [
    config.bootstrapDir + '/scss',
+   config.nodeDir + '/mdi/scss',
   ]
 };
 // Sass
