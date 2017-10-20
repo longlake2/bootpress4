@@ -24,11 +24,10 @@
 <div id="page" class="site">
  
 	<header id="masthead" class="site-header row">
-		<div class="site-branding">
+		<div class="site-branding"> 
 			<?php
 			bootpress4_the_custom_logo()
 			?>
-
 			<?php
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>

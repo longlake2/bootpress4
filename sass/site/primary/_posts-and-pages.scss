@@ -48,3 +48,30 @@
 .site-content {
   @include make-row();
 }
+
+.mdi {
+    color: $gray-700;
+    margin-right: 0.25rem;
+  }
+ 
+  span {
+    margin-right: 1.0rem;
+    display: inline-block;
+ 
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+ 
+  a {
+    color: $gray-700;
+ 
+    &:hover {
+      text-decoration: none;
+      color: $gray-900;
+    }
+  }
+
+  .entry-title {
+  font-size:1.75rem !important; 
+  }

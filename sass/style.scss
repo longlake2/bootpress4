@@ -19,14 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
-
-
-@import url(href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet");
-
+  
 @import "variables/variables";
-
-@import "materialdesignicons";
 
 @import "bootstrap";
 
@@ -43,4 +37,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 @import "modules/alignments";
 
 @import "modules/clearings";
+
+@import "mdi/scss/materialdesignicons"
 

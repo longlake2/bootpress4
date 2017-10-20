@@ -97,8 +97,8 @@ gulp.task('bootmove', function() { 
 //move icon file to base directory
 
 gulp.task('icons', function() { 
-    return gulp.src(config.nodeDir + '/mdi/fonts/**.*') 
-      .pipe(gulp.dest('./material-icons')); 
+    return gulp.src(config.nodeDir + '/mdi/**/*.*') 
+      .pipe(gulp.dest('./mdi')); 
 });
  
 

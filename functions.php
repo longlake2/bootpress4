@@ -159,12 +159,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 // Register Custom Navigation Walker
-// require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
-
-// Register Custom Navigation Walker
-// require get_template_directory() . '/inc/Bootstrap_Walker_Nav_Menu.php';
-
-// Register Custom Navigation Walker
 require get_template_directory() . '/inc/bootstrap-walker.php';
 
 
