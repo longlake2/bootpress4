@@ -1,60 +1,34 @@
 
+
 .widget {
-	margin: 0 0 2em;
+	margin: 0 0 1.5em;
 
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 
+  .tagcloud,
+  .textwidget,
+  .calendar_wrap {
+    @extend .card-body;
+  }
 
-	#wp-calendar {
-		width: 100%;
-	}
+  ul {
+    padding-top: 1.0em;
+    padding-bottom: 1.0em;
+  }
 
-	.card-header {
-		font-size: 1.25rem;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
-background: rgb(246,248,249); /* Old browsers */
-background: -moz-linear-gradient(top,  rgb(246,248,249) 0%, rgb(229,235,238) 50%, rgb(215,222,227) 51%, rgb(245,247,249) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgb(246,248,249) 0%,rgb(229,235,238) 50%,rgb(215,222,227) 51%,rgb(245,247,249) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgb(246,248,249) 0%,rgb(229,235,238) 50%,rgb(215,222,227) 51%,rgb(245,247,249) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
-
-	}
-
-	.tagcloud,
-	.textwidget,
-	.calendar_wrap {
-		padding: $card-spacer-x;
-		 @extend .card-body;
-	}
-
-	ul{
-		padding-top: $card-spacer-y;
-		padding-bottom: $card-spacer-y;
-		margin-bottom: 0;
-	}
-
-	&.widget_search {
-	  border: none;
-	}
-
-	.tagcloud a {
-	@extend .btn;
-    @extend .btn-secondary;
-		margin-bottom: .5rem;
-	}
-
-	table {
+  table {
     width: 100%;
     max-width: 100%;
   }
 
+  &.widget_search {
+    border: none;
+    box-shadow: none;
+  }
 }
-
-
-
 
 
  

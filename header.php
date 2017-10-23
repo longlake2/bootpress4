@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
  
-	<header id="masthead" class="site-header row">
+	<header id="masthead" class="site-header">
 		<div class="site-branding"> 
 			<?php
 			bootpress4_the_custom_logo()
@@ -35,7 +35,7 @@
 			<?php
 			endif; ?>
 		</div>
-		 <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent;>
+		 <nav class="navbar navbar-expand-lg navbar-dark" style="background: transparent;>
 
 	    	<div class="container">
 			  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
 	              'theme_location' => 'primary',
 	              'depth'      => 2,
 	              'container'  => false,
-	              'menu_class'     => 'navbar-nav ml-auto',
+	              'menu_class'     => 'navbar-nav mr-auto',
 	              'walker'     => new Bootstrap_Walker_Nav_Menu()
 	              );
 	            if (has_nav_menu('primary')) {
