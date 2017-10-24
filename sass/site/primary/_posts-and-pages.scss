@@ -43,10 +43,15 @@
 	@include media-breakpoint-up(md) {
 	   @include make-col(3);
 	}  
+  .widget-area {
+  margin-top: 1.0em;
+}
+
 }
 
 .site-content {
   @include make-row();
+    word-break: break-word;
 }
 
 .mdi {
